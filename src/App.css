@@ -12,3 +12,17 @@ Link{
   text-decoration: none;
   color: black;
 }
+
+
+/* ERROR 404 PAGE */
+.error404-img-holder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error404-img{
+  height: 75vh;
+  width: 75vw;
+
+}
