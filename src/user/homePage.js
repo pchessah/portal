@@ -3,7 +3,7 @@ import { UncontrolledCarousel } from 'reactstrap'
 const carouselItems = [
   {
     src:
-      'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      'https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80',
     altText: 'Learn Python',
     caption: '',
     header: '',
@@ -31,7 +31,7 @@ function HomePage() {
   return (
     <div className="homepage-container">
       <div className="homepage-slideshow">
-        <UncontrolledCarousel items={carouselItems} />
+        <UncontrolledCarousel className="home-carousel" items={carouselItems} />
       </div>
       <div className="homepage-topcourses">Top courses</div>
       <div className="homepage-info">

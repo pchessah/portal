@@ -15,7 +15,7 @@ function Navibar() {
   const toggle = () => setIsOpen(!isOpen)
   return (
     <>
-      <Navbar color="light" light expand="md">
+      <Navbar className="my-navbar" color="light" light expand="md">
         <NavbarBrand href="/">Learning Portal</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse className="nav-items" isOpen={isOpen} navbar>
