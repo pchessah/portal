@@ -18,8 +18,6 @@ function App() {
       <Route path="/lesson" component={LessonPage}/>
       <Route path="/user" component={UserProfile}/>
       <Route component={PageNotFound}/>
-
-
     </Switch>
     </>
   )
