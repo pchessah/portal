@@ -1,5 +1,6 @@
 import React from 'react'
 import { UncontrolledCarousel } from 'reactstrap'
+import TopCourses from '../components/topCourses'
 const carouselItems = [
   {
     src:
@@ -30,12 +31,17 @@ const carouselItems = [
 function HomePage() {
   return (
     <>
-      <UncontrolledCarousel className="home-carousel" items={carouselItems} />
-      <div className="homepage-topcourses">Top courses</div>
+    <UncontrolledCarousel items={carouselItems} />
+    <div className="home-page-container">
+      <h4 className="top-courses-title">Top Courses</h4>
+      <div className="home-top-courses">
+        <TopCourses />
+      </div>
       <div className="homepage-info">
         <div className="homepage-newsletter">Get Your news letter</div>
         <div className="homepage-contact-us">Contact us</div>
       </div>
+    </div>
     </>
   )
 }

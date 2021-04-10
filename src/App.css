@@ -26,5 +26,29 @@ Link{
 
 /*--------------------------------- HOME PAGE-------------------------------- */
 .carousel-item img{ 
-  height:70vh; 
+  height:70vh;
+  filter: brightness(155%);
+}
+
+.home-top-courses{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.home-page-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.top-courses-title{
+  margin: 16px;
+}
+
+
+
+/* ----------------------------TOP COURSES COMPONENT------------------------ */
+.top-courses-img{
+  filter: brightness(35%);
+  height: 100%
 }
