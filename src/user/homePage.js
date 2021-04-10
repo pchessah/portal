@@ -29,16 +29,14 @@ const carouselItems = [
 
 function HomePage() {
   return (
-    <div className="homepage-container">
-      <div className="homepage-slideshow">
-        <UncontrolledCarousel className="home-carousel" items={carouselItems} />
-      </div>
+    <>
+      <UncontrolledCarousel className="home-carousel" items={carouselItems} />
       <div className="homepage-topcourses">Top courses</div>
       <div className="homepage-info">
         <div className="homepage-newsletter">Get Your news letter</div>
         <div className="homepage-contact-us">Contact us</div>
       </div>
-    </div>
+    </>
   )
 }
 

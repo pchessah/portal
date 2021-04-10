@@ -8,12 +8,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from './components/footer'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <BrowserRouter>
       <Navbar />
       <App />
       <Footer />
     </BrowserRouter>
-  </React.StrictMode>,
+  </>,
   document.getElementById('root'),
 )

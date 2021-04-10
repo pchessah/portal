@@ -6,8 +6,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
+  NavItem
 } from 'reactstrap'
 
 function Navibar() {
@@ -21,20 +20,14 @@ function Navibar() {
         <Collapse className="nav-items" isOpen={isOpen} navbar>
           <div className="mover"></div>
           <Nav className="mr-auto nav-links" navbar>
-            <NavItem>
-              <NavLink>
-                <Link to="/">Home</Link>
-              </NavLink>
+            <NavItem>           
+                <Link className="nav-link" to="/">Home</Link>              
             </NavItem>
-            <NavItem>
-              <NavLink>
-                <Link to="/course">Courses</Link>
-              </NavLink>
+            <NavItem>           
+                <Link className="nav-link" to="/course">Courses</Link>              
             </NavItem>
-            <NavItem>
-              <NavLink>
-                <Link to="/user">User</Link>
-              </NavLink>
+            <NavItem>           
+                <Link className="nav-link" to="/user">User</Link>              
             </NavItem>
           </Nav>
         </Collapse>
