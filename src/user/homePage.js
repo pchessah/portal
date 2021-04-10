@@ -1,5 +1,17 @@
 import React from 'react'
-import { UncontrolledCarousel } from 'reactstrap'
+import {
+  UncontrolledCarousel,
+  Card,
+  CardDeck,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button,
+  CardBody,
+} from 'reactstrap'
+import ContactUs from '../components/contactUs'
+import Newsletter from '../components/newsletter'
 import TopCourses from '../components/topCourses'
 const carouselItems = [
   {
@@ -31,17 +43,39 @@ const carouselItems = [
 function HomePage() {
   return (
     <>
-    <UncontrolledCarousel items={carouselItems} />
-    <div className="home-page-container">
-      <h4 className="top-courses-title">Top Courses</h4>
-      <div className="home-top-courses">
-        <TopCourses />
+      <UncontrolledCarousel items={carouselItems} />
+      <div className="home-page-container">
+        <h4 className="top-courses-title">Top Courses</h4>
+        <div className="home-top-courses">
+          <TopCourses />
+        </div>
+        <div className="homepage-info">
+          <CardDeck>
+            <Card className="homepage-contact">
+              <ContactUs />
+            </Card>
+            <Card className="homepage-newsletter">
+              <CardBody>
+              <Form inline>
+                <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                  <Label for="exampleEmail" className="mr-sm-2">
+                    Email
+                  </Label>
+                  <Input
+                    type="email"
+                    name="email"
+                    id="exampleEmail"
+                    placeholder="something@idk.cool"
+                  />
+                </FormGroup>
+                <Button>Submit</Button>
+              </Form>
+              </CardBody>
+              
+            </Card>
+          </CardDeck>
+        </div>
       </div>
-      <div className="homepage-info">
-        <div className="homepage-newsletter">Get Your news letter</div>
-        <div className="homepage-contact-us">Contact us</div>
-      </div>
-    </div>
     </>
   )
 }

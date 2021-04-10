@@ -11,7 +11,7 @@ function TopCourses() {
   return (
     <>
       <CardDeck>
-        <Card inverse>
+        <Card inverse className="top-course-card">
           <CardImg
             width="100%"
             src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
