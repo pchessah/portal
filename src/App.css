@@ -83,4 +83,21 @@ Link{
   flex-direction: column;
 }
 
-/* ------------------------------CONTACT US--------------------------------- */
+/* ------------------------------FOOTER-------------------------------- */
+.my-footer{
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.my-footer > span{
+  margin: 5px;
+  font-size: 18px;
+}
+
+.my-footer > p{
+  margin-top: 8px;
+  font-size: smaller;
+  font-weight: 700;
+}
