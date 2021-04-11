@@ -3,8 +3,8 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap'
 
 function Newsletter() {
   return (
-    <>
-      <h4>Get Your News Letter</h4>
+    <div className="newsletter-form">
+      <strong><p>Get Your News Letter</p></strong>
       <Form inline>
         <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
           <Label for="exampleEmail" className="mr-sm-2">
@@ -19,7 +19,7 @@ function Newsletter() {
         </FormGroup>
         <Button>Submit</Button>
       </Form>
-    </>
+    </div>
   )
 }
 

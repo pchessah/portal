@@ -28,10 +28,10 @@ function TopCourses() {
             width="100%"
             src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
             alt="Card image cap"
-            className="top-courses-img"
+            className=""
           />
            <CardImgOverlay>
-            <CardTitle tag="h5">Web design using html,css and JS</CardTitle>
+            <CardTitle style={{color:"black"}} tag="h5">Web design using html,css and JS</CardTitle>
           </CardImgOverlay>
         </Card>
         <Card inverse>

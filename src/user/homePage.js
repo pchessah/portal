@@ -3,11 +3,6 @@ import {
   UncontrolledCarousel,
   Card,
   CardDeck,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Button,
   CardBody,
 } from 'reactstrap'
 import ContactUs from '../components/contactUs'
@@ -52,26 +47,14 @@ function HomePage() {
         <div className="homepage-info">
           <CardDeck>
             <Card className="homepage-contact">
-              <ContactUs />
+              <CardBody>
+                <ContactUs />
+              </CardBody>
             </Card>
             <Card className="homepage-newsletter">
               <CardBody>
-              <Form inline>
-                <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                  <Label for="exampleEmail" className="mr-sm-2">
-                    Email
-                  </Label>
-                  <Input
-                    type="email"
-                    name="email"
-                    id="exampleEmail"
-                    placeholder="something@idk.cool"
-                  />
-                </FormGroup>
-                <Button>Submit</Button>
-              </Form>
+                <Newsletter />
               </CardBody>
-              
             </Card>
           </CardDeck>
         </div>
