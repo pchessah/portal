@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineCopyright, AiFillTwitterCircle, AiFillYoutube } from 'react-icons/ai'
 import { FaFacebook } from 'react-icons/fa'
+
 function Footer() {
   return (
     <>

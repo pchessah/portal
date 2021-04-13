@@ -33,7 +33,7 @@ Link{
 }
 
 .home-top-courses{
-  margin-bottom: 16px;
+  margin: 26px;
 }
 
 .home-page-container{
@@ -43,11 +43,11 @@ Link{
 }
 
 .top-courses-title{
-  margin: 30px;
+  margin: 45px 30px 20px 30px;
 }
 
 .homepage-contact{
-  width: 95vw;
+  width: 93vw;
   color: white;
   font-size: smaller;
   font-weight: 700;
@@ -58,9 +58,14 @@ Link{
 .homepage-newsletter{
   font-size: smaller;
   color: white;
-  width: 95vw;
+  width: 93vw;
   font-weight: 700;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=341&q=80")
+}
+
+.homepage-info{
+  margin: 36px;
+  padding: 10px;
 }
 
 /* ----------------------------TOP COURSES COMPONENT------------------------ */
@@ -73,6 +78,7 @@ Link{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 16px;
 }
 
 

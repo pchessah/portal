@@ -29,6 +29,9 @@ function Navibar() {
             <NavItem>           
                 <Link className="nav-link" to="/user">User</Link>              
             </NavItem>
+            <NavItem>           
+                <Link className="nav-link" to="/signup">Sign Up</Link>              
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

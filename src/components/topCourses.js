@@ -22,7 +22,7 @@ function TopCourses() {
             <CardTitle tag="h5">Beginning Python</CardTitle>
           </CardImgOverlay>
         </Card>
-        <Card inverse>
+        <Card inverse className="top-course-card">
           <CardImg
             top
             width="100%"
@@ -34,7 +34,7 @@ function TopCourses() {
             <CardTitle style={{color:"black"}} tag="h5">Web design using html,css and JS</CardTitle>
           </CardImgOverlay>
         </Card>
-        <Card inverse>
+        <Card inverse className="top-course-card">
           <CardImg
             top
             width="100%"
