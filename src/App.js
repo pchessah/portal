@@ -7,6 +7,7 @@ import UserProfile from '../src/user/userProfile'
 import PageNotFound from "./components/pageNotFound"
 import { Route, Switch } from 'react-router'
 import Signup from './user/signup'
+import Login from "./user/login"
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Route path="/lesson" component={LessonPage}/>
       <Route path="/user" component={UserProfile}/>
       <Route path="/signup" component={Signup}/>
+      <Route path="/login" component={Login}/>
       <Route component={PageNotFound}/>
     </Switch>
     </>
