@@ -14,7 +14,7 @@ import { MdSchool } from 'react-icons/md'
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(3),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function SignIn() {
+export default function Login() {
   const classes = useStyles()
 
   return (
@@ -43,7 +43,7 @@ export default function SignIn() {
           <MdSchool />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Log in
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -79,7 +79,7 @@ export default function SignIn() {
             color="primary"
             className={classes.submit}
           >
-            Sign In
+           Log In
           </Button>
           <Grid container>
             <Grid item xs>

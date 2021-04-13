@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Avatar from '@material-ui/core/Avatar'
 import Button from '@material-ui/core/Button'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -10,9 +10,11 @@ import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import { MdSchool } from 'react-icons/md'
 
+
+
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(3),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -30,8 +32,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function Signup() {
+
+
+
+export default function Signup(props) {
   const classes = useStyles()
+  const[credentials, setCredentials] = useState({email: "", password: ""})
+  const handleSubmit = event => {
+    event.preventDefault();
+    setCredentials({ email: ' ', password: ' ' });
+  }
 
   return (
     <Container component="main" maxWidth="xs">
@@ -43,7 +53,7 @@ export default function Signup() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} noValidate onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -98,13 +108,14 @@ export default function Signup() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={props.signInWithGoogle}
           >
             Sign Up
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
               <Link to="/login">
-                Already have an account? Sign in
+                Already have an account? Log in
               </Link>
             </Grid>
           </Grid>

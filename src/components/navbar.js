@@ -10,7 +10,8 @@ import {
 } from 'reactstrap'
 import { MdSchool } from 'react-icons/md'
 
-function Navibar() {
+function Navibar(props) {
+  console.log(props.user?.displayName);
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
   return (
