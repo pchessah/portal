@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContent: {
     flexGrow: 1,
-  }
+  },
 }))
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -73,9 +73,7 @@ export default function CoursePage() {
                 </Grid>
                 <Grid item>
                   <FormControl className={classes.formControl}>
-                    <InputLabel id="demo-simple-select-helper-label">
-                   
-                    </InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label"></InputLabel>
                     <Select
                       labelId="demo-simple-select-helper-label"
                       id="demo-simple-select-helper"
@@ -101,12 +99,16 @@ export default function CoursePage() {
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={3}>
                 <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
                   <CardContent className={classes.cardContent}>
+                    <iframe
+                      width="853"
+                      height="480"
+                      src={`https://www.youtube.com/embed/${embedId}`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      title="Embedded youtube"
+                    />
                     <Typography gutterBottom variant="h6" component="h2">
                       Heading
                     </Typography>
