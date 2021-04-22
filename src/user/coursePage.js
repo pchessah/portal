@@ -107,7 +107,7 @@ export default function CoursePage() {
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h6" component="h2">
                       Heading
                     </Typography>
                     <Typography>
@@ -117,10 +117,7 @@ export default function CoursePage() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
+                      Start Course
                     </Button>
                   </CardActions>
                 </Card>
