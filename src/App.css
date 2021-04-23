@@ -127,3 +127,12 @@ Link{
   flex-direction: column;
   align-items: center;
 }
+
+/* ------------------------------------------COURSE PAGE------------------------------------------ */
+
+@media (min-width: 960px){
+  .MuiContainer-maxWidthMd{
+    max-width: fit-content;
+  }
+}
+
